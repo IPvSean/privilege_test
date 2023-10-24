@@ -1,0 +1,8 @@
+- name: Configure common options and control nodes
+  hosts: localhost
+  gather_facts: true
+  connection: local
+  tasks:
+    - name: Include control_node_always role
+      ansible.builtin.include_role:
+        name: "roles/sean"
