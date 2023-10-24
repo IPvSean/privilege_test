@@ -10,7 +10,7 @@
   become: true
   become_user: "{{ run_commands_user }}"
   command: 
-    msg: "whoami"
+    cmd: "whoami"
   register: whoami
 
 - name: check user with run_commands_user
